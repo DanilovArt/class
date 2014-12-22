@@ -32,7 +32,11 @@ int main(void){
     cout<<"Деление матрицы на число"<<endl<<matrix1;
     Mathmatrix matrix10;
     matrix10= Mathmatrix(2,3);
+    cout<<"test"<<endl;
     Mathmatrix *mat = new Mathmatrix;
-    cout<<mat;
+    cout<<mat<<endl;
+    matrix1.change(99,1,3);
+    cout<<"Изменение элемента"<<endl<<matrix1;
+    cout<<"Чтение элемента "<<endl<<matrix1.readel(2,3);
     return 0;
 }

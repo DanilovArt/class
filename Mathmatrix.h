@@ -26,6 +26,10 @@ public:
     friend Mathmatrix  operator-(const Mathmatrix& left,const Mathmatrix& right);
     //умножение
     friend Mathmatrix operator*(const Mathmatrix& left, const Mathmatrix& right);
+    //изменение любого элемента
+    void change(int number,int i,int j);
+    //чтение элемента
+    int readel(int i, int j);
     //умножение
     void mult(int number);
     //деление

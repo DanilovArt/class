@@ -111,6 +111,29 @@ void Mathmatrix::del(int number){
     }
 }
 
+void Mathmatrix::change(int number, int i,int j){
+    int m=matrix.size(), n=matrix[0].size();
+    i-=1;
+    j-=1;
+    if (i<m)
+        if (j<n) {
+            matrix[i][j]=number;
+        }
+}
+
+int Mathmatrix::readel(int i, int j){
+    int k=0;
+    int m=matrix.size(), n=matrix[0].size();
+    i-=1;
+    j-=1;
+    if (i<m)
+        if (j<n) {
+            k=matrix[i][j];
+        }
+    return k;
+}
+
+
 Mathmatrix operator*(const Mathmatrix& left, const Mathmatrix& right){
     int m = left.matrix.size(), n = left.matrix[0].size(), a = right.matrix.size(), b = right.matrix[0].size();
     if (n != a){
